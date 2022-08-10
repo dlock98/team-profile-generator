@@ -1,0 +1,25 @@
+{
+  "name": "team-profile-generator",
+  "version": "1.0.0",
+  "description": "## Description This project is command-line application that is ran through Node.js. Once initiated it requests information from the person using it about members of this team profile. The information requested is the members of the team along with their member ID, email address and another piece of information such as GitHub username, school or phone number.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlock98/team-profile-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlock98/team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/dlock98/team-profile-generator#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
