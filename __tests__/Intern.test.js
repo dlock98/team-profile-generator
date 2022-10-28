@@ -1,23 +1,20 @@
-// using Intern constructor 
+// using Engineer constructor 
 const Intern = require('../lib/Intern');
 
 // creating intern object  
 test('creates an Intern object', () => {
-    const intern = new Intern('Danielle', 90, 'deelock98@gmail', 'UNC');
-    
-    expect(intern.school) .toEqual(expect.any(String));
+    const intern = new Intern("Chelsea Small", "111", "chelsea@fakemail.com", "QueenofEye")    
+    expect(intern.github).toEqual("Chelsea Small");
+    expect(intern.id).toEqual("222");
+    expect(intern.email).toEqual("chelsea@fakemail.com");
+    expect(intern.github).toEqual("QueenofEye");});
+
+// gets github from getGithub()
+test('gets intern school value', () => {
+    expect(intern.getSchool()).toEqual("William Dash University");
 });
 
-// gets school from getSchool()
-test('gets employee school', () => {
-    const intern = new Intern('Danielle', 90, 'deelock98@gmail', 'UNC');
-    
-    expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school.toString()));
-});
-
-// gets role from getRole()
-test('gets role of employee', () => {
-    const intern = new Intern('Danielle', 90, 'deelock98@gmail.com', 'UNC');
-
+// gets role from getRole() 
+test('gets role of intern', () => {
     expect(intern.getRole()).toEqual("Intern");
-}); 
+});
